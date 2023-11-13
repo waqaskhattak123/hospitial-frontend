@@ -140,15 +140,17 @@ const Admin = () => {
                             </div>
                         </div>
                         {/* ================ Order Details List ================= */}
+
+                        {/* old tables started */}
                         <div className="details">
                             <div className="recentOrders">
                                 <div className="cardHeader">
-                                    <h2>Recent Orders</h2>
+                                    <h2 className='text-2xl'>Patient Records:</h2>
                                     <Link to='/totalstore'>
-                                    <a className="btn">
-                                        View Store
-                                    </a>
-                                    
+                                        <a className="btn">
+                                            View Store
+                                        </a>
+
                                     </Link>
                                 </div>
                                 <table>
@@ -156,30 +158,34 @@ const Admin = () => {
                                     <tr className='flex flex-row'>
                                         <tr>
 
-                                            <td>Name</td>
+                                            <td className='font-bold text-xl'>Name</td>
                                         </tr>
                                         <tr>
-                                            <td>Medicine: 1</td>
+                                            <td className='font-semibold'>Medicine:1</td>
 
                                         </tr>
                                         <tr>
-                                            <td>Medicine: 2</td>
+                                            <td className='font-semibold'>Quantity:</td>
 
                                         </tr>
                                         <tr>
-                                            <td>Medicine: 3</td>
+                                            <td className='font-semibold'>Medicine:2</td>
 
                                         </tr>
                                         <tr>
-                                            <td>Medicine: 4</td>
+                                            <td className='font-semibold'>Quantity</td>
 
                                         </tr>
                                         <tr>
-                                            <td>Quantity:</td>
+                                            <td className='font-semibold'>Medicine:3</td>
 
                                         </tr>
                                         <tr>
-                                            <td>Status:</td>
+                                            <td className='font-semibold'>Qunatity:</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td className='font-semibold'>Status:</td>
 
                                         </tr>
                                     </tr>
@@ -194,13 +200,14 @@ const Admin = () => {
 
                                                         <tr>
                                                             <td>{element.username.slice(0, 8)}...</td>
+                                                          
                                                             <td>{element.medicine1}</td>
-                                                            <td>{element.medicine2}</td>
-                                                            <td>{element.medicine3}</td>
-                                                            <td>{element.medicine4}</td>
                                                             <td>{element.quantity1}</td>
+                                                            <td>{element.medicine2}</td>
                                                             <td>{element.quantity2}</td>
+                                                            <td>{element.medicine3}</td>
                                                             <td>{element.quantity3}</td>
+                                                            <td>{element.medicine4}</td>
                                                             <td>{element.quantity4}</td>
                                                             <td>
                                                                 <span className="status delivered">Delivered</span>
@@ -219,6 +226,7 @@ const Admin = () => {
                             {/* ================= New Customers ================ */}
 
                         </div>
+                        {/* old tables ended */}
                     </div>
                 </div>
                 {/* =========== Scripts =========  */}
