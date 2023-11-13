@@ -23,8 +23,14 @@ const Login = () => {
       [name]: value,
     });
   };
+  if(formData.email === 'admin@gmail.com' && formData.password ==='admin'){
+    navigate('/admin')
+  }else{
+   
+  }
  const handleSubmit = async (e) => {
     e.preventDefault();
+   
     try {
      const response =  await axios.post("http://localhost:8080/api/vi/Login1", formData);
       setsuccess(true);
@@ -42,11 +48,11 @@ const Login = () => {
       });
       const result  =response.data
       localStorage.setItem("Token", result.AuthToken)
-      navigate('/store')
+      navigate('/admin')
       // console.log("ghfhjkl")
     } catch (error) {
       console.error("Error adding user:", error);
-      toast.info("error Successfull", {
+      toast.info("Error While Login ", {
         position: "top-right",
         autoClose: 2000, // in milliseconds
         hideProgressBar: true,

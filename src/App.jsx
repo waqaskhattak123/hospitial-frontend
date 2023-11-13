@@ -10,7 +10,9 @@ import Store from "./components/Store";
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from "react-toastify";
 import Payment from "./components/Payment";
-
+import Admin from "./components/Admin";
+import Child from "./components/ChildCompo";
+import TotalStore from "./components/TotalStore";
 function App() {
   return (
     <>
@@ -25,6 +27,9 @@ function App() {
       <Route path="/contact" element={<Contact/>}/>
       <Route path="/store" element={<Store/>}/>
       <Route path="/Payment" element={<Payment/>}/>
+      <Route path="/admin" element={<Admin/>}/>
+      <Route path="/child" element={<Child/>}/>
+      <Route path="/totalstore" element={<TotalStore/>}/>
     </Routes>
     </BrowserRouter>
     

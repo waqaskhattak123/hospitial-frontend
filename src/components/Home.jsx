@@ -15,6 +15,7 @@ const Home = () => {
  
   return (
     <div>
+    
       <Navbar/>
          {/* BG Charackter */}
          <div className="flex flex-col md:grid md:grid-cols-2 flex-grow-0 lg:flex lg:flex-row lg:mx-20 mt-14">
