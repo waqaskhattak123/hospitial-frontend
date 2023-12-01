@@ -13,10 +13,7 @@ import Payment from "./components/Payment";
 import Admin from "./components/Admin";
 import Child from "./components/ChildCompo";
 import TotalStore from "./components/TotalStore";
-import AOS from "aos";
-import "aos/dist/aos.css"; // You can also use <link> for styles
-// ..
-AOS.init();
+
 function App() {
   return (
     <div className="bg-gray-300">
