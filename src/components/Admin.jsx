@@ -200,7 +200,7 @@ const Admin = () => {
 
                                                         <tr>
                                                             <td>{element.username.slice(0, 8)}...</td>
-                                                          
+
                                                             <td>{element.medicine1}</td>
                                                             <td>{element.quantity1}</td>
                                                             <td>{element.medicine2}</td>
