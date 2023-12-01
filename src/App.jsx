@@ -5,7 +5,7 @@ import Registeration from "./components/Registeration";
 import Login from "./components/Login";
 import UserProfile from "./components/UserProfile";
 import About from "./components/About";
-import Contact from "./components/contact";
+import Contact from "./components/Contact";
 import Store from "./components/Store";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
