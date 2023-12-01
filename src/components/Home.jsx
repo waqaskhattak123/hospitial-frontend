@@ -18,7 +18,7 @@ const Home = () => {
       <div className="flex flex-col md:grid md:grid-cols-2 flex-grow-0 lg:flex lg:flex-row lg:mx-20 mt-14">
         <div
           className="w-auto flex-shrink-0 flex-nowrap mt-4 md:w-[500px]  lg:w-[500px] xl:w-[600px]"
-          data-aos="fade-up"
+          data-aos="fade-down"
           data-aos-anchor-placement="bottom-bottom"
         >
           <h1 className="text-center font-black text-xl leading-10 font-serif md:text-3xl md:font-bold md:mt-[70px] md:mb-5 lg:inline-flex lg:text-[50px] lg:leading-10">
@@ -110,7 +110,7 @@ const Home = () => {
       {/* Card -1 */}
       <div
         className="sm:grid sm:grid-cols-2 sm:gap-5 md:grid-cols-3 lg:grid-cols-4 lg:mx-20"
-        data-aos="fade-up"
+        data-aos="fade-down"
         data-aos-anchor-placement="bottom-bottom"
       >
         <div className="max-w-sm bg-white border mt-[30px] mx-auto border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
