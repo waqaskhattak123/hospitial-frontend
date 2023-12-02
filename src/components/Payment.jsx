@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
 function Payment() {
-    const navigate = useNavigate()
+  const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
     toast.success("Payment Successfull", {
@@ -15,7 +15,7 @@ function Payment() {
       draggable: true,
       progress: undefined,
     });
-    navigate('/')
+    navigate("/");
   };
   return (
     <div>
@@ -23,7 +23,7 @@ function Payment() {
         Enter You Payment Detail
       </h1>
 
-      <div class="grid grid-cols-2 gap-2">
+      <div class="grid grid-cols-1 sm:grid-cols-2  gap-2">
         <div>
           <h1 className="text-2xl text-center my-2  text-red-600">
             Enter Bank Detail
@@ -99,8 +99,8 @@ function Payment() {
             </form>
           </div>
         </div>
-        <div>
-          <h1 className="text-2xl  my-2 text-red-600">
+        <div className="mx-auto">
+          <h1 className="text-2xl  my-2 text-red-600 place-items-center">
             Scenner To fullfill your Payment
           </h1>
           <img

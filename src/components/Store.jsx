@@ -148,7 +148,7 @@ function Store() {
       <h1 className="mb-4 h-14 text-xl bg-[#F6F6F6] text-center font-extrabold leading-none tracking-tight text-gray-900 md:text-2xl lg:text-3xl dark:text-white">
         Plaese Enter you disease To get Medicine
       </h1>
-      <form className="w-[800px] items-center ml-48">
+      <form className="w-full items-center">
         <label
           htmlFor="default-search"
           className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
@@ -176,7 +176,7 @@ function Store() {
         </div>
       </form>
       {show1 && (
-        <p className="ml-48 mr-72 mt-9">
+        <p className="mx-6">
           <span className="text-xl text-green-500">
             Licensed and Accredited:
           </span>{" "}
