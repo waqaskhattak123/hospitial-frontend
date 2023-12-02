@@ -1,15 +1,15 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <div>
-             {/* Footer Started */}
+      {/* Footer Started */}
       <footer className="bg-white dark:bg-gray-900">
         <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
           <div className="md:flex md:justify-between">
             <div className="mb-6 md:mb-0">
-              <a href="https://flowbite.com/" className="flex items-center">
+              <Link to="/" className="flex items-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 48 48"
@@ -87,9 +87,9 @@ const Footer = () => {
                   </defs>
                 </svg>
                 <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-                  Basic Health Care
+                  Health Care
                 </span>
-              </a>
+              </Link>
             </div>
             <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
               <div>
@@ -97,26 +97,26 @@ const Footer = () => {
                   Quick Links
                 </h2>
                 <ul className="text-gray-500 dark:text-gray-400 font-medium">
-                  <li className="mb-4">
-                    <h1>Home</h1>
-                  </li>
-                  <Link to={'/register'}>
-                  <li className="mb-4 cursor-pointer">
-                    <h1>CheckUp</h1>
-                  </li>
-                  
+                  <Link to={"/contact"}>
+                    <li className="mb-4">
+                      <h1>Contact</h1>
+                    </li>
                   </Link>
-                  <Link to={'/contact'}>
-                  <li className="mb-4 cursor-pointer">
-                    <h1>Contact</h1>
-                  </li>
-                  
+
+                  <Link to={"/register"}>
+                    <li className="mb-4 cursor-pointer">
+                      <h1>CheckUp</h1>
+                    </li>
                   </Link>
-                  <Link to={'/about'}>
-                  <li className="mb-4 cursor-pointer">
-                    <h1>About Us</h1>
-                  </li>
-                  
+                  <Link to={"/contact"}>
+                    <li className="mb-4 cursor-pointer">
+                      <h1>Contact</h1>
+                    </li>
+                  </Link>
+                  <Link to={"/about"}>
+                    <li className="mb-4 cursor-pointer">
+                      <h1>About Us</h1>
+                    </li>
                   </Link>
                 </ul>
               </div>
@@ -126,24 +126,18 @@ const Footer = () => {
                 </h2>
                 <ul className="text-gray-500 dark:text-gray-400 font-medium">
                   <li className="mb-4">
-                    <a
-                      href="https://github.com/themesberg/flowbite"
-                      className="hover:underline "
-                    >
-                      Github
-                    </a>
+                    <Link to={"/about"} className="hover:underline ">
+                      Who we Are
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="https://discord.gg/4eeurUVvTy"
-                      className="hover:underline"
-                    >
+                    <Link to={"/about"} className="hover:underline">
                       Discord
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
-              
+
               <div>
                 <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
                   Legal
@@ -164,20 +158,20 @@ const Footer = () => {
             </div>
             {/* Follow us */}
             <div>
-                <h2 className="mb-6 text-sm font-bold mt-4 text-gray-900 uppercase dark:text-white">
-                  Working Hours
-                </h2>
-                <ul className="text-gray-500 dark:text-gray-400 font-medium">
-                  <li className="mb-4 ">
-                    <h1 className="font-bold">Monday: 09:00 : 18:00 </h1>
-                    <h1 className="font-bold">Tuesday: 09:00 : 18:00 </h1>
-                    <h1 className="font-bold">Wedday: 09:00 : 18:00 </h1>
-                    <h1 className="font-bold">Thursday: 09:00 : 18:00 </h1>
-                    <h1 className="font-bold">Friday: 09:00 : 18:00 </h1>
-                    <h1 className="font-bold">Sunday: 09:00 : 18:00 </h1>
-                  </li>
-                </ul>
-              </div>
+              <h2 className="mb-6 text-sm font-bold mt-4 text-gray-900 uppercase dark:text-white">
+                Working Hours
+              </h2>
+              <ul className="text-gray-500 dark:text-gray-400 font-medium">
+                <li className="mb-4 ">
+                  <h1 className="font-bold">Monday: 09:00 : 18:00 </h1>
+                  <h1 className="font-bold">Tuesday: 09:00 : 18:00 </h1>
+                  <h1 className="font-bold">Wedday: 09:00 : 18:00 </h1>
+                  <h1 className="font-bold">Thursday: 09:00 : 18:00 </h1>
+                  <h1 className="font-bold">Friday: 09:00 : 18:00 </h1>
+                  <h1 className="font-bold">Sunday: 09:00 : 18:00 </h1>
+                </li>
+              </ul>
+            </div>
             {/* Follow us ended */}
           </div>
           <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
@@ -287,9 +281,8 @@ const Footer = () => {
       </footer>
 
       {/* Footer Started Ended */}
-      
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
