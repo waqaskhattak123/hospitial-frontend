@@ -35,20 +35,19 @@ const UserProfile = () => {
   const handlelogout = () => {
     localStorage.clear();
     window.location.reload();
-  
   };
   return (
     <div>
-      <Navbar/>
+      <Navbar />
       {data ? (
         <div>
-          <div className="bg-[#F6F6F6] mx-[100px] h-[100px] rounded-xl mb-[242px] ">
+          <div className="bg-[#F6F6F6]  h-[100px] rounded-xl mb-[242px] ">
             <div className="flex items-center space-x-4 mx-4 mt-11 pt-5 bg-[#F6F6F6]">
               <img className="w-10 h-10 rounded-full " src={three} />
               <div className="font-medium dark:text-white">
                 <div>Name </div>
                 <div className="text-sm text-gray-500 dark:text-gray-400">
-                No Name
+                  No Name
                 </div>
               </div>
               <div className="font-medium dark:text-white">
@@ -67,7 +66,7 @@ const UserProfile = () => {
           </div>
         </div>
       ) : (
-        <div className="bg-[#F6F6F6] mx-[100px] h-[100px] rounded-xl mb-[242px] ">
+        <div className="bg-[#F6F6F6] h-[100px] rounded-xl mb-[242px] ">
           <div className="flex items-center space-x-4 mx-4 mt-11 pt-5 bg-[#F6F6F6]">
             <img className="w-10 h-10 rounded-full " src={three} />
             <div className="font-medium dark:text-white">
@@ -98,7 +97,7 @@ const UserProfile = () => {
           </div>
         </div>
       )}
-      <Footer/>
+      <Footer />
     </div>
   );
 };
